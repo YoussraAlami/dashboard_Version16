@@ -1,10 +1,10 @@
 .page {
     color: white;
     padding: 0 1rem;
-    background: #f1f5f9;
+    // background: #f1f5f9;
     &__box {
       min-height: 120px;
-      background: #1e293b;
+      background: #455d7a;
       margin: 0 -1rem;
       font-size: 36px;
     }
@@ -21,4 +21,20 @@
         transform: translate(-50%, -50%);
       }
     }
+  }
+
+  :host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  mat-drawer {
+    width: 260px;
+    background: #455d7a;
+    color: white;
+  }
+  
+  mat-drawer-container {
+    height: 100vh;
   }

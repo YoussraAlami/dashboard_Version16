@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class DashboardComponent {
 
+  ngOnInit(): void {
+    
+  }
+  sideBarOpen = true;
+  sideBarToggler() {
+    console.log('Toggle sidebar function called');
+
+    this.sideBarOpen = !this.sideBarOpen
+  }
 }

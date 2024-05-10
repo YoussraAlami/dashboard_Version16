@@ -1,18 +1,90 @@
-<mat-nav-list class="navbarcolor">
-    <div class="logo py-4">
-      <img src="../../assets/user.png" alt="Company Logo" />
-    </div>
-    <mat-divider></mat-divider>
-    <h2 matSubheader class="mt-2">APPLICATIONS</h2>
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/home">
-       Home
-    </a>
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard">
-    Dashboard
-    </a>
-    <a mat-list-item> Link 3 </a>
-    <a mat-list-item> Link 4 </a>
-    <a mat-list-item> Link 5 </a>
-    <a mat-list-item> Link 6 </a>
-  </mat-nav-list>
-  
+<!-- <div class="input-group">
+  <mat-form-field>
+    <input matInput type="search" id="form1" placeholder="Search">
+  </mat-form-field>
+  <button mat-icon-button>
+    <mat-icon>search</mat-icon>
+  </button>
+</div> -->
+
+
+<mat-nav-list class="nav">
+  <mat-list-item routerLink="/home">
+      <mat-icon>dashboard</mat-icon><span>Dashboard</span>
+  </mat-list-item>
+  <mat-expansion-panel class="custom-background">
+      <mat-expansion-panel-header>
+          Oracle
+      </mat-expansion-panel-header>
+      <mat-nav-list>
+          <a mat-list-item routerLink="#">
+             Etat Database
+          </a>
+          <a mat-list-item routerLink="#">
+              Etat de memoire
+          </a>
+          <a mat-list-item routerLink="#">
+            Etat de CPU
+        </a>
+      </mat-nav-list>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel > <!--[class.mat-elevation-z0]="true"-->
+      <mat-expansion-panel-header>
+          SQLSERVER
+      </mat-expansion-panel-header>
+      <mat-nav-list>
+        <a mat-list-item routerLink="#">
+          Etat Database
+       </a>
+       <a mat-list-item routerLink="#">
+           Etat de memoire
+       </a>
+       <a mat-list-item routerLink="#">
+         Etat de CPU
+     </a>
+      </mat-nav-list>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel class="custom-background">
+    <mat-expansion-panel-header>
+        Postgresql
+    </mat-expansion-panel-header>
+    <mat-nav-list>
+        <a mat-list-item routerLink="#">
+           Etat Database
+        </a>
+        <a mat-list-item routerLink="#">
+            Etat de memoire
+        </a>
+        <a mat-list-item routerLink="#">
+          Etat de CPU
+      </a>
+    </mat-nav-list>
+  </mat-expansion-panel>
+    <mat-expansion-panel class="custom-background">
+      <mat-expansion-panel-header>
+          Mysql
+      </mat-expansion-panel-header>
+      <mat-nav-list>
+          <a mat-list-item routerLink="#">
+             Etat Database
+          </a>
+          <a mat-list-item routerLink="#">
+              Etat de memoire
+          </a>
+          <a mat-list-item routerLink="#">
+            Etat de CPU
+        </a>
+      </mat-nav-list>
+  </mat-expansion-panel>
+
+  <mat-list-item routerLink="/home">
+      <span>Charts</span>
+  </mat-list-item>
+  <mat-list-item routerLink="/home">
+    <span>Notifications</span>
+  </mat-list-item>
+
+</mat-nav-list>
+

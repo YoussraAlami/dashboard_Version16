@@ -1,4 +1,19 @@
-<div class="container-fluid page">
+<!-- <div class="container-fluid page">
+    <div class="d-flex page__box p-3 mt-2">Home</div>
+    <div class="page__content shadow p-3 position-relative">
+      <div class="page__content-data position-absolute text-center">
+        dashboard Content Goes Here
+      </div>
+    </div>
+  </div> -->
+
+  <mat-drawer-container>
+    <mat-drawer mode="side" [opened]="sideBarOpen">
+        <app-sidenav></app-sidenav>
+    </mat-drawer>
+    <mat-drawer-content>
+        <app-header (click)="sideBarToggler()"></app-header>
+  <div class="container-fluid page">
     <div class="d-flex page__box p-3 mt-2">Home</div>
     <div class="page__content shadow p-3 position-relative">
       <div class="page__content-data position-absolute text-center">
@@ -7,3 +22,27 @@
     </div>
   </div>
 
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+  <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">
+    <i class="bi bi-house-door-fill"></i>
+    <span class="text-[15px] ml-4 text-white font-bold">Home</span>
+</div>
+  
+</mat-drawer-content>
+</mat-drawer-container>
+
+<!-- <mat-drawer-container>
+  
+  <mat-drawer mode="side" [opened]="sideBarOpen">
+   <mat-drawer mode="side" opened="true"> 
+    <app-sidenav></app-sidenav>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-header (toggleSidebarForMe)="sideBarToggler()" ></app-header>
+    <router-outlet></router-outlet>
+
+  </mat-drawer-content>
+ 
+</mat-drawer-container> -->

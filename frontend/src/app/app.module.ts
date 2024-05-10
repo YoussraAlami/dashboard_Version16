@@ -15,10 +15,17 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import {MatTreeModule} from '@angular/material/tree';
-import { TreeTestComponent } from './tree-test/tree-test.component';
+
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormsModule } from '@angular/forms'; // Add this line
+import { FormGroup, FormsModule, } from '@angular/forms'; // Add this line
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { LoginComponent } from './login/login.component';
+import { MatCardModule } from '@angular/material/card';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +33,7 @@ import { FormsModule } from '@angular/forms'; // Add this line
     SidenavComponent,
     HomeComponent,
     DashboardComponent,
-    TreeTestComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +49,13 @@ import { FormsModule } from '@angular/forms'; // Add this line
     MatTreeModule,
     MatInputModule,
     MatFormFieldModule,
-    FormsModule // Add this line
+    FormsModule, // Add this line
+    CollapseModule,
+    CollapseModule.forRoot(),
+    MatExpansionModule,
+    MatCardModule,
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

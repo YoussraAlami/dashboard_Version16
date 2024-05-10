@@ -1,63 +1,155 @@
-.logo{
-    text-align: center;
-    padding: 2.6rem 1rem;
-    img {
-        width: 200px;
-    }
-}
-.mat-icon{
-    vertical-align: center;
-    margin-right: 1rem;
-}
+// .logo{
+//     text-align: center;
+//     padding: 2.6rem 1rem;
+//     img {
+//         width: 20px;
+//     }
+//     &:empty {
+//       padding: 0;
+//     }
+// }
+// .mat-icon{
+//     vertical-align: center;
+//     margin-right: 1rem;
+// }
 
-  .mat-divider {
-    border-top-width: 2px;
-    border-color: white;
-  }
-  .mat-list-item {
-    color: #94a3b8 !important;
-    font-size: 0.8rem;
-    height: 44px !important;
-    margin-bottom: 4px;
-    &:hover {
-      color: #f2f5f7 !important;
-    }
-    ::ng-deep {
-      .mat-list-item-content {
-        border-radius: 5px;
-        margin: 0 8px;
-        &:hover {
-          background: #2c3344 !important;
-        }
-      }
-    }
-  }
-  .list-item-active {
-    // background: blue !important;
-    // border-radius: 0 2rem 2rem 0;
-    // &:hover {
-    //   background: blue;
-    // }
+//   .mat-divider {
+//     border-top-width: 2px;
+//     border-color: white;
+//   }
+
+//   .mat-list-item {
+//     color: #94a3b8 !important;
+//     font-size: 0.8rem;
+//     height: 44px !important;
+//     margin-bottom: 4px;
+//     &:hover {
+//       color: #f2f5f7 !important;
+//     }
+//     ::ng-deep .mat-list-item-content {
+       
+//         border-radius: 5px;
+//         margin: 0 8px;
+//         &:hover {
+//           background: #2c3344 !important;
+//         }  
+//     }
+//   }
+//   // Move the media query outside
+// @media (max-width: 0) {
+//   .logo:empty {
+//     padding: 0;
+//   }
+//   ::ng-deep .mat-list-item-content:empty {
+//     margin: 0;
+//   }
+// }
+
+//   .list-item-active {
+//     // background: blue !important;
+//     // border-radius: 0 2rem 2rem 0;
+//     // &:hover {
+//     //   background: blue;
+//     // }
   
-    color: #f2f5f7 !important;
-    ::ng-deep {
-      .mat-list-item-content {
-        background: #2c3344 !important;
-        &:hover {
-          background: #2c3344 !important;
-        }
-      }
-    }
-  }
-  .mat-subheader {
-    color: #818cf8;
-    font-size: 0.6rem;
-    font-weight: 100;
-    letter-spacing: 1px;
-  }
+//     color: #f2f5f7 !important;
+//     ::ng-deep {
+//       .mat-list-item-content {
+//         background: #2c3344 !important;
+//         &:hover {
+//           background: #2c3344 !important;
+//         }
+//       }
+//     }
+//   }
+//   .mat-subheader {
+//     color: #818cf8;
+//     font-size: 0.6rem;
+//     font-weight: 100;
+//     letter-spacing: 1px;
+//   }
 
-  .example-tree-progress-bar {
-    margin-left: 30px;
-  }
+//   .example-tree-progress-bar {
+//     margin-left: 30px;
+//   }
+// input{
+//   color: white;
+// }
+// .custom-link {
+//   display: block;
+//   padding: 10px 16px;
+//   color: white !important;
+  
+//   text-decoration: none;
+  
+//   border-radius: 4px;
+  
+//   //pointer-events: none; /* hadii muhimaa */
+//   &:hover {
+//     background-color: #455d7a; /* set the background color to blue on hover */
+//     color: white !important; /* set the color of the text to white on hover */
+//   }
+// }
+// a{
+//   pointer-events: none;
+// }
 
-  //searchbar 
+
+// .btn-toggle {
+    
+//     color: white; /* Couleur du texte */
+//     border: 1px solid black; /* Bordure */
+//     padding: 10px; /* Espacement intérieur */
+//     border-radius: 5px; /* Bordure arrondie */
+//     width: 100%;
+// }
+
+// .btn-toggle:hover {
+//     //background-color: #f0f0f0; /* Couleur de fond au survol */
+// }
+
+// .btn-toggle-nav {
+//     padding-left: 0;
+//     list-style: none;
+// }
+
+// .btn-toggle-nav li {
+//     margin-bottom: 0.5rem;
+// }
+
+// .btn-toggle-nav a {
+//     display: block;
+//     padding: 0.25rem 0.5rem;
+//     color: white; /* Couleur du texte */
+//     text-decoration: none;
+//     border: 1px solid transparent;
+//     border-radius: 0.25rem;
+// }
+
+// .btn-toggle-nav a:hover {
+//     background-color: #f0f0f0; /* Couleur de fond au survol */
+//     border-color: #dee2e6; /* Couleur de la bordure au survol */
+// }
+// //new 
+
+
+
+mat-expansion-panel-header {
+  color: white;
+}
+mat-icon {
+  color: white;
+}
+mat-list-item{
+  color: black;
+}
+mat-expansion-panel {
+background-color: #455d7a;
+}
+.nav{
+  margin-top: 70%;
+}
+// .input-group{
+//   margin-top: 70%;
+// }
+
